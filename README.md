@@ -1,11 +1,6 @@
 # DoeFlow
 
-Projeto organizado em duas pastas:
-
-- `back-end/`: API Spring Boot para campanhas de doacao.
-- `front-end/`: aplicacao web do projeto.
-
-O repositorio Git fica na raiz. Assim, ao abrir a pasta `DoeFlow` no VS Code, o Git enxerga as mudancas do back-end dentro de `back-end/` e tambem as futuras mudancas do front-end.
+API Spring Boot para campanhas de doacao com cadastro de usuarios, autenticacao JWT, criacao e aprovacao de campanhas, registro de doacoes e acompanhamento do progresso arrecadado.
 
 ## Requisitos
 
@@ -29,7 +24,6 @@ JWT_EXPIRATION_HOURS=2
 No Windows, caso o Java padrao esteja em outra versao, aponte o `JAVA_HOME` para um JDK 17 antes de rodar:
 
 ```powershell
-cd back-end
 $env:JAVA_HOME='C:\Program Files\Java\jdk-17'
 $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 .\mvnw.cmd spring-boot:run
@@ -38,7 +32,6 @@ $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 ## Testes
 
 ```powershell
-cd back-end
 $env:JAVA_HOME='C:\Program Files\Java\jdk-17'
 $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 .\mvnw.cmd clean test
